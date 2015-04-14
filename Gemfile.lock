@@ -31,6 +31,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  sinatra (~> 1.4.6)
+  sinatra
   sinatra-contrib (~> 1.4.2)
   thin (~> 1.6.3)
