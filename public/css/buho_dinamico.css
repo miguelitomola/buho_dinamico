@@ -90,7 +90,7 @@ header {
     padding: 20px 0;
     color: white; }
 
-.page_content {
+.page_body {
   position: relative;
   min-height: 492px;
   border: 1px solid black;
@@ -99,18 +99,20 @@ header {
   margin-bottom: 20px;
   font-family: 'Delius Swash Caps', cursive;
   background-image: url("../img/confetti_background-b.jpg"); }
-  .page_content p, .page_content ul {
-    line-height: 30px;
-    margin-bottom: 50px; }
-  .page_content ul {
-    text-indent: 20px;
-    list-style-position: inside;
-    list-style-type: square;
-    margin-top: -50px; }
-  .page_content .p1 img {
-    float: left; }
-  .page_content .p2 img {
-    float: right; }
+  .page_body .page_content {
+    position: relative; }
+    .page_body .page_content p, .page_body .page_content ul {
+      line-height: 30px;
+      margin-bottom: 50px; }
+    .page_body .page_content ul {
+      text-indent: 20px;
+      list-style-position: inside;
+      list-style-type: square;
+      margin-top: -50px; }
+    .page_body .page_content .p1 img {
+      float: left; }
+    .page_body .page_content .p2 img {
+      float: right; }
 
 footer {
   position: relative;

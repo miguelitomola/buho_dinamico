@@ -128,7 +128,7 @@ header{
 	}
 }
 
-.page_content{
+.page_body{
 	position: relative;
 	min-height: 492px;
 	border: 1px solid $black;
@@ -137,25 +137,40 @@ header{
 	margin-bottom: 20px;
 	font-family: 'Delius Swash Caps', cursive;
 	background-image: url('../img/confetti_background-b.jpg');
-	p, ul{
-		line-height: 30px;
-		margin-bottom: 50px;
-	}
-	ul{
-		text-indent: 20px;
-		list-style-position: inside;
-		list-style-type: square;
-		margin-top: -50px;
-	}
-	.p1{
-		img{
-			float: left;
-		}
-	}
-	.p2{
-		img{
-			float: right;
-		}
+	// aside{
+ //    position: relative;
+ //    float: right;
+ //    width: 150px;
+ //    min-height: 452px;
+ //    margin-left: 20px; 
+ //    .social{
+ //    	background-color: $yellow;
+ //    	min-height: 100px;
+ //    	padding: 10px;
+ //    }
+	// }
+	.page_content{
+	  position: relative;  
+	  p, ul{
+	  	line-height: 30px;
+	  	margin-bottom: 50px;
+	  }
+	  ul{
+	  	text-indent: 20px;
+	  	list-style-position: inside;
+	  	list-style-type: square;
+	  	margin-top: -50px;
+	  }
+	  .p1{
+	  	img{
+	  		float: left;
+	  	}
+	  }
+	  .p2{
+	  	img{
+	  		float: right;
+	  	}
+	  }
 	}
 }
 
