@@ -51,7 +51,29 @@
 		</div>
 		<div class="page_body">
 		  <div class="page_content">
-		  	
+		  	<form action="post" name="contact_form" class="contact_form">
+		  		<p>Envíanos tu mensaje</p>
+					<p>
+		  		  <label for="us_name">Tu nombre</label><br>
+					  <input type="text" name="us_name" class="us_name" placeholder="Nombre">
+					</p>
+		  		<p>
+		  		  <label for="email">Tu e-mail</label><br>
+		  		  <input type="text" name="email" class="email" placeholder="ejemplo@ejemplo.com">
+		  		</p>
+		  		<p>
+		  		  <label for="subject">Asunto</label><br>
+					  <input type="text" name="subject" class="subject" placeholder="Asunto">
+					</p>
+					<p>
+		  		  <label for="message">Mensaje</label><br>
+					  <textarea name="message" class="message" placeholder="Escribe tu mensaje aquí"></textarea>
+					</p>
+					<p>
+						<input type="submit" class="send" value="Enviar mensaje">
+					</p>
+		  	</form>
+		  	<div class="anti_float"></div>
 		  </div>	
 		</div>
 		<footer>

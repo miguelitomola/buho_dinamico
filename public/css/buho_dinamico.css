@@ -113,6 +113,21 @@ header {
       float: left; }
     .page_body .page_content .p2 img {
       float: right; }
+  .page_body .contact_form {
+    position: relative;
+    float: left;
+    width: 50%; }
+    .page_body .contact_form p {
+      width: 100%;
+      line-height: 20px;
+      margin-bottom: 20px; }
+      .page_body .contact_form p textarea, .page_body .contact_form p input {
+        width: 100%; }
+      .page_body .contact_form p textarea {
+        height: 150px; }
+      .page_body .contact_form p .send {
+        width: 150px;
+        height: 60px; }
 
 footer {
   position: relative;

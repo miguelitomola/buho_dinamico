@@ -172,7 +172,29 @@ header{
 	  	}
 	  }
 	}
+	.contact_form{
+		position: relative;
+		float: left;
+		width: 50%;
+	  p{
+	  	width: 100%;
+	    line-height: 20px;
+		  margin-bottom: 20px;
+		  textarea, input{
+		  	width: 100%;
+		  }
+		  textarea{
+		  	height: 150px;
+		  }
+		  .send{
+		  	width: 150px;
+		  	height: 60px;
+		  }
+	  }
+  }
 }
+
+
 
 footer{
 	position: relative;
