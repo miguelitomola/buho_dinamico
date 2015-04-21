@@ -20,21 +20,24 @@ get '/contacto' do
 end
 
 post '/contacto' do
-	Pony.mail(
-    to: 'mikimontero@hotmail.com',
-    from: params[:email],
-    subject: params[:subject],
-    body: params[:message],
-    via: :smtp,
-    via_options: {
-      adress: 'smtp.sendgrid.net',
-      port: '587',
-      domain: 'heroku.com',
+  options = {
+    :to => 'mikimontero@hotmail.com',
+    :from => params[:email],
+    :subject => params[:us_name],
+    :body => params[:message],
+    :via => :smtp,
+    :via_options => {
+      :adress => 'smtp.sendgrid.net',
+      :port => '587',
+      :domain => 'heroku.com',
       :user_name => ENV['SENDGRID_USERNAME'],
       :password => ENV['SENDGRID_PASSWORD'],
-      authentication: :plain,
-      enable_starttls_auto: true
+      :authentication => :plain,
+      :enable_starttls_auto => true
     }
-	)
+	}
+
+  Pony.mail(options)
+
   redirect '/contacto'
 end
