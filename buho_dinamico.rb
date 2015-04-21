@@ -3,23 +3,23 @@ require 'sinatra/reloader'
 require 'pony'
 
 
-get '/' do
+get '/?' do
   erb :index
 end
 
-get '/que_hacemos' do
+get '/que_hacemos/?' do
   erb :que_hacemos
 end
 
-get '/quienes_somos' do
+get '/quienes_somos/?' do
   erb :quienes_somos
 end
 
-get '/contacto' do
+get '/contacto/?' do
   erb :contacto
 end
 
-post '/contacto' do
+post '/contact_form/?' do
   options = {
     :to => 'mikimontero@hotmail.com',
     :from => params[:email],
@@ -39,5 +39,5 @@ post '/contacto' do
 
   Pony.mail(options)
 
-  redirect '/contacto'
+  redirect '/contacto/?'
 end
