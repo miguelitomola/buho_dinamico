@@ -46,14 +46,26 @@
 		  </div>
 		  <div class="anti_float"></div>  
 		</header>
-		<div class="page_title">
+		<section class="subpage_header">
 			<h3><%= @page_name %></h3>
-		</div>
-		<div class="page_body">
+			<div class="social">
+				<a href="https://www.facebook.com/pages/Animaci%C3%B3nElB%C3%BAho-Din%C3%A1mico/577457979035741?sk=timeline&ref=page_internal">
+			    <img src="./img/facebook_red_50.png" title="El Búho Dinámico en Facebook" alt="El Búho Dinámico en Facebook">
+			  </a>
+        <a href="https://twitter.com/Abuhodinamico">
+			    <img src="./img/twitter_red_50.png" title="El Búho Dinámico en Twitter" alt="El Búho Dinámico en Twitter">
+			  </a>
+			  <a href="mailto:animacionbd@gmail.com">
+			    <img src="./img/envelope_red_50.png" title="E-mail de El Búho Dinámico" alt="e-mail de El Búho Dinámico">
+			  </a>
+			</div>
+			<div class="anti_float"></div>
+		</section>
+		<section class="page_body">
 		  <div class="page_content">
 		  	<%= yield %>
 		  </div>	
-		</div>
+		</section>
 		<footer>
 			<p>Para una buena animación, no lo dudes, pon un búho en tu celebración.</p>
 		</footer>

@@ -120,11 +120,27 @@ header{
   }
 }
 
-.page_title{
+.subpage_header{
 	position: relative;
+	padding: 0 15px 0 15px;
+	h3, .social{
+		position: relative;
+	}
 	h3{
-		padding: 20px 0;
+		float: left;
+		line-height: 70px;
+		vertical-align: middle;
 		color: $white;
+	}
+	.social{
+		float: right;
+		height: 70px;
+		img{
+			position: relative;
+			top: 50%;
+			margin-top: -15%;
+			margin-left: 4px;	
+		}
 	}
 }
 

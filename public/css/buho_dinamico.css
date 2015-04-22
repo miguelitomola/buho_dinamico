@@ -84,11 +84,24 @@ header {
     header .c2 nav .button_4 {
       border-right: 2px solid black; }
 
-.page_title {
-  position: relative; }
-  .page_title h3 {
-    padding: 20px 0;
+.subpage_header {
+  position: relative;
+  padding: 0 15px 0 15px; }
+  .subpage_header h3, .subpage_header .social {
+    position: relative; }
+  .subpage_header h3 {
+    float: left;
+    line-height: 70px;
+    vertical-align: middle;
     color: white; }
+  .subpage_header .social {
+    float: right;
+    height: 70px; }
+    .subpage_header .social img {
+      position: relative;
+      top: 50%;
+      margin-top: -15%;
+      margin-left: 4px; }
 
 .page_body {
   position: relative;
