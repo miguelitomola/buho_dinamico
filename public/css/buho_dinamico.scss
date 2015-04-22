@@ -99,7 +99,7 @@ header{
     	.button{
     		position: relative;
     		float: left;
-        width: 24.9%;
+        width: 25%;
         min-height: 50px;
         background-color: $yellow;
         box-sizing: border-box;
@@ -141,57 +141,61 @@ header{
 			margin-top: -15%;
 			margin-left: 4px;	
 		}
+		img:hover{
+			border: 2px solid black;
+		}
 	}
 }
 
 .page_body{
 	position: relative;
 	min-height: 492px;
-	border: 1px solid $black;
 	box-sizing: border-box;
-	padding: 20px;
+	padding: 20px 0 20px 0;
 	margin-bottom: 20px;
 	font-family: 'Delius Swash Caps', cursive;
 	background-image: url('../img/confetti_background-b.jpg');
-	// aside{
- //    position: relative;
- //    float: right;
- //    width: 150px;
- //    min-height: 452px;
- //    margin-left: 20px; 
- //    .social{
- //    	background-color: $yellow;
- //    	min-height: 100px;
- //    	padding: 10px;
- //    }
-	// }
+	border: 1px solid $black;
 	.page_content{
-	  position: relative;  
+	  position: relative; 
 	  p, ul{
-	  	line-height: 30px;
-	  	margin-bottom: 50px;
+	  	line-height: 35px;
 	  }
 	  ul{
 	  	text-indent: 20px;
 	  	list-style-position: inside;
 	  	list-style-type: square;
-	  	margin-top: -50px;
 	  }
-	  .p1{
+	  .cell{
+	  	position: relative;
+	  	width: 28%;
+	  	height: 100%;
+	  	margin-left: 4%;
+	  	float: left;
 	  	img{
-	  		float: left;
+	  		display: block;
+	  		margin: 0 auto;
 	  	}
 	  }
-	  .p2{
-	  	img{
-	  		float: right;
-	  	}
+	  .c1{
+	    img{
+     		float: left;
+     		margin: 20px 20px 20px 0;
+     	}	
 	  }
+	  .c3{
+      img{
+     		float: right;
+     		margin: 20px 0 20px 20px;
+     	}
+    }
+	  
 	}
 	.contact_form{
 		position: relative;
 		float: left;
 		width: 50%;
+		margin-left: 30px;
 	  p{
 	  	width: 100%;
 	    line-height: 20px;

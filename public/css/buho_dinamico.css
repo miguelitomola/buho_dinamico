@@ -69,7 +69,7 @@ header {
     header .c2 nav .button {
       position: relative;
       float: left;
-      width: 24.9%;
+      width: 25%;
       min-height: 50px;
       background-color: #ffd800;
       box-sizing: border-box;
@@ -102,34 +102,46 @@ header {
       top: 50%;
       margin-top: -15%;
       margin-left: 4px; }
+    .subpage_header .social img:hover {
+      border: 2px solid black; }
 
 .page_body {
   position: relative;
   min-height: 492px;
-  border: 1px solid black;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   margin-bottom: 20px;
   font-family: 'Delius Swash Caps', cursive;
-  background-image: url("../img/confetti_background-b.jpg"); }
+  background-image: url("../img/confetti_background-b.jpg");
+  border: 1px solid black; }
   .page_body .page_content {
     position: relative; }
     .page_body .page_content p, .page_body .page_content ul {
-      line-height: 30px;
-      margin-bottom: 50px; }
+      line-height: 35px; }
     .page_body .page_content ul {
       text-indent: 20px;
       list-style-position: inside;
-      list-style-type: square;
-      margin-top: -50px; }
-    .page_body .page_content .p1 img {
+      list-style-type: square; }
+    .page_body .page_content .cell {
+      position: relative;
+      width: 28%;
+      height: 100%;
+      margin-left: 4%;
       float: left; }
-    .page_body .page_content .p2 img {
-      float: right; }
+      .page_body .page_content .cell img {
+        display: block;
+        margin: 0 auto; }
+    .page_body .page_content .c1 img {
+      float: left;
+      margin: 20px 20px 20px 0; }
+    .page_body .page_content .c3 img {
+      float: right;
+      margin: 20px 0 20px 20px; }
   .page_body .contact_form {
     position: relative;
     float: left;
-    width: 50%; }
+    width: 50%;
+    margin-left: 30px; }
     .page_body .contact_form p {
       width: 100%;
       line-height: 20px;
