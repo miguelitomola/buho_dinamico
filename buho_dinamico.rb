@@ -2,7 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'pony'
 
-
 get '/?' do
   erb :index
 end
