@@ -1,8 +1,10 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pony'
+require 'uri'
 
-get '/?' do
+
+get '/?' do 
   erb :index
 end
 
