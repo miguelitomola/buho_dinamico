@@ -1,20 +1,37 @@
 <% @page_name = "Contacta con nosotros" %>
 
-<form action="contact_form" method="POST" class="contact_form">
-	<p>Envíanos tu mensaje</p>
-	<p>
-		<label for="us_name">Tu nombre</label><br>
-	  <input type="text" name="us_name" class="us_name" placeholder="Nombre">
-	</p>
-	<p>
-		<label for="email">Tu e-mail</label><br>
-		<input type="text" name="email" class="email" placeholder="ejemplo@ejemplo.com">
-	</p>
-	<p>
-		<label for="message">Mensaje</label><br>
-	  <textarea name="message" class="message" placeholder="Escribe tu mensaje aquí"></textarea>
-	</p>
-	<p>
-		<input type="submit" class="send" value="Enviar mensaje">
-	</p>
-</form>
+<ul class="contact_us">
+	<li class="phones_li">
+		<p>Por <u>teléfono</u> y <u>whatsapp</u> en los siguientes números: </p>
+		<ul class="phones">
+			<li><p><strong>619 02 78 73</strong></p></li>
+			<li><p><strong>690 31 91 14</strong></p></li>
+		</ul>
+	</li>
+	<li>
+		<p>Escribiendo un <u>e-mail</u> a:</p>
+		<p class="email"><strong>animacionbd@gmail.com</strong></p>
+	</li>
+	<li class="form_li">
+	  <p>Rellenando el siguiente <u>formulario</u> (EN CONSTRUCCIÓN):</p>
+		<form action="contact_form" method="POST" class="contact_form">
+	    <p class="name">
+		    <label for="us_name">Tu nombre</label><br>
+	      <input type="text" name="us_name" class="us_name" placeholder="Nombre">
+	    </p>
+	    <p>
+		    <label for="email">Tu e-mail</label><br>
+		    <input type="text" name="email" class="email" placeholder="ejemplo@ejemplo.com">
+	    </p>
+	    <p>
+		    <label for="message">Mensaje</label><br>
+	      <textarea name="message" class="message" placeholder="Escribe tu mensaje aquí"></textarea>
+	    </p>
+	    <p class="send_p">
+		    <input type="submit" class="send_b" value="Enviar mensaje">
+	    </p>
+	  </form>
+	  <div class="anti_float"></div>
+	</li>
+</ul>
+

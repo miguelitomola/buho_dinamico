@@ -1,5 +1,5 @@
 window.addEventListener("load", function(){
-  function present_page(){
+  function present_page_nav(){
 	  var b_1 = document.getElementsByClassName("button_1")[0];
 	  var b_2 = document.getElementsByClassName("button_2")[0];
 	  var b_3 = document.getElementsByClassName("button_3")[0];
@@ -21,5 +21,6 @@ window.addEventListener("load", function(){
       break;
 	  };
 	};
-	present_page()
+	present_page_nav();
 });
+
