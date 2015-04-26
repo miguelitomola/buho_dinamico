@@ -30,7 +30,7 @@ strong {
   width: 1024px;
   min-height: 768px;
   background-color: #ad0000;
-  margin-top: 20p	x;
+  margin-top: 20px;
   margin-bottom: 20px; }
 
 header {
@@ -82,7 +82,7 @@ header {
     header .c2 nav .button:hover {
       font-weight: bold;
       text-decoration: underline;
-      color: #00007b; }
+      color: #ad0000; }
     header .c2 nav .present_page {
       text-decoration: underline;
       font-weight: bold; }
@@ -123,15 +123,16 @@ header {
     padding: 30px 30px;
     /*index*/
     /*que_hacemos*/
-    /*quienes_somos*/ }
-    .page_body .page_content p, .page_body .page_content ul {
-      line-height: 35px; }
-    .page_body .page_content ul {
-      text-indent: 20px;
-      list-style-position: inside;
-      list-style-type: square; }
-    .page_body .page_content .cell {
+    /*quienes_somos*/
+    /*contacto*/ }
+    .page_body .page_content .text_index, .page_body .page_content .text_qh, .page_body .page_content .text_qs {
       position: relative; }
+      .page_body .page_content .text_index p, .page_body .page_content .text_index ul, .page_body .page_content .text_qh p, .page_body .page_content .text_qh ul, .page_body .page_content .text_qs p, .page_body .page_content .text_qs ul {
+        line-height: 35px; }
+      .page_body .page_content .text_index ul, .page_body .page_content .text_qh ul, .page_body .page_content .text_qs ul {
+        text-indent: 20px;
+        list-style-position: inside;
+        list-style-type: square; }
     .page_body .page_content .c1 img, .page_body .page_content .c2 img, .page_body .page_content .c3 img {
       position: relative;
       float: left;
@@ -161,7 +162,7 @@ header {
       font-size: 25px;
       background-color: #ffd800;
       display: inline-block;
-      text-indent: 0;
+      text-indent: 20px;
       margin-bottom: 10px; }
     .page_body .page_content .text_qh li {
       list-style-type: none; }
@@ -180,21 +181,47 @@ header {
     .page_body .page_content .text_qs img {
       display: block;
       margin: 0 auto; }
-  .page_body .contact_form {
-    position: relative;
-    float: left;
-    width: 65%; }
-    .page_body .contact_form p {
-      width: 100%;
-      line-height: 20px;
-      margin-bottom: 20px; }
-      .page_body .contact_form p textarea, .page_body .contact_form p input {
-        width: 100%; }
-      .page_body .contact_form p textarea {
-        height: 150px; }
-      .page_body .contact_form p .send {
-        width: 150px;
-        height: 60px; }
+    .page_body .page_content .contact_us {
+      line-height: 35px; }
+      .page_body .page_content .contact_us li {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        list-style-type: decimal; }
+        .page_body .page_content .contact_us li .phones li {
+          margin-left: 20px;
+          margin-bottom: 0;
+          list-style-type: none; }
+        .page_body .page_content .contact_us li .email {
+          margin-left: 20px; }
+          .page_body .page_content .contact_us li .email a {
+            text-decoration: none;
+            color: inherit; }
+      .page_body .page_content .contact_us .form_li {
+        margin-bottom: 0; }
+      .page_body .page_content .contact_us .contact_form {
+        position: relative;
+        float: left;
+        width: 65%; }
+        .page_body .page_content .contact_us .contact_form .name {
+          margin-top: 10px; }
+        .page_body .page_content .contact_us .contact_form p {
+          text-indent: 20px;
+          width: 100%;
+          line-height: 20px;
+          margin-bottom: 20px; }
+          .page_body .page_content .contact_us .contact_form p textarea, .page_body .page_content .contact_us .contact_form p input {
+            margin-left: 20px;
+            width: 100%; }
+          .page_body .page_content .contact_us .contact_form p textarea {
+            height: 150px; }
+          .page_body .page_content .contact_us .contact_form p .send_b {
+            width: 150px;
+            height: 60px;
+            margin-left: 0;
+            font-family: inherit;
+            font-size: 18px; }
+        .page_body .page_content .contact_us .contact_form .send_p {
+          margin-bottom: 0; }
 
 footer {
   position: relative;

@@ -54,7 +54,7 @@ strong{
 	width: 1024px;
 	min-height: 768px;
 	background-color: $red;
-	margin-top: 20p	x;
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
@@ -114,7 +114,7 @@ header{
     	.button:hover{
         font-weight: bold;
         text-decoration: underline;
-        color: $darkblue;
+        color: $red;
     	}
     	.present_page{
         text-decoration: underline;
@@ -164,17 +164,17 @@ header{
 	border: 1px solid $black;
 	.page_content{
 	  position: relative;
-	  padding: 30px 30px; 
-	  p, ul{
-	  	line-height: 35px;
-	  }
-	  ul{
-	  	text-indent: 20px;
-	  	list-style-position: inside;
-	  	list-style-type: square;
-	  }
-	  .cell{
+	  padding: 30px 30px;
+	  .text_index, .text_qh, .text_qs{ 
 	  	position: relative;
+	    p, ul{
+	    	line-height: 35px;
+	    }
+	    ul{
+	    	text-indent: 20px;
+	    	list-style-position: inside;
+	    	list-style-type: square;
+	    }
 	  }
 	  /*index*/
 	  .c1, .c2, .c3{
@@ -221,7 +221,7 @@ header{
     		font-size: 25px;
     		background-color: $yellow;
     		display: inline-block;
-    		text-indent: 0;
+    		text-indent: 20px;
     		margin-bottom: 10px;
     	}
     	li{
@@ -254,26 +254,66 @@ header{
     		margin: 0 auto;
     	}
     }
-	}
-	.contact_form{
-		position: relative;
-		float: left;
-		width: 65%;
-	  p{
-	  	width: 100%;
-	    line-height: 20px;
-		  margin-bottom: 20px;
-		  textarea, input{
-		  	width: 100%;
-		  }
-		  textarea{
-		  	height: 150px;
-		  }
-		  .send{
-		  	width: 150px;
-		  	height: 60px;
-		  }
-	  }
+
+	  /*contacto*/
+	  .contact_us{
+	  	line-height: 35px;
+	  	.phones_li{
+	  	}
+	  	li{
+	  		margin-left: 20px;
+	  		margin-bottom: 20px;
+	  	  list-style-type: decimal;	
+	  	  .phones{
+	  	  	li{
+	  	  		margin-left: 20px;
+	  	  		margin-bottom: 0;	
+	  	  	  list-style-type: none;
+	  	  	}
+	  	  }
+	  	  .email{
+	  	  	margin-left: 20px;
+	  	  	a{
+	  	  		text-decoration: none;
+	  	  		color: inherit;
+	  	  	}
+	  	  }	
+	  	}
+	  	.form_li{
+        margin-bottom: 0;
+	  	}
+	    .contact_form{
+	    	position: relative;
+	    	float: left;
+	    	width: 65%;
+	    	.name{
+          margin-top: 10px;
+	    	}
+	      p{
+	    	  text-indent: 20px;
+	      	width: 100%;
+	        line-height: 20px;
+	    	  margin-bottom: 20px;
+	    	  textarea, input{
+	    	  	margin-left: 20px;
+	    	  	width: 100%;
+	    	  }
+	    	  textarea{
+	    	  	height: 150px;
+	    	  }
+	    	  .send_b{
+	    	  	width: 150px;
+	    	  	height: 60px;
+	    	  	margin-left: 0;
+	    	  	font-family: inherit;
+	    	  	font-size: 18px;;
+	    	  }
+	      }
+	      .send_p{
+	    	 	margin-bottom: 0;
+	    	}
+      }
+    }
   }
 }
 
