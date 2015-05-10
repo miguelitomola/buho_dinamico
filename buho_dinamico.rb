@@ -19,7 +19,7 @@ get '/contacto/?' do
   erb :contacto
 end
 
-post '/contact_form/?' do
+post '/contact_form' do
   options = {
     :to => 'mikimontero@hotmail.com',
     :from => params[:email],
@@ -30,8 +30,8 @@ post '/contact_form/?' do
       :adress => 'smtp.sendgrid.net',
       :port => '587',
       :domain => 'heroku.com',
-      :user_name => ENV['SENDGRID_USERNAME'],
-      :password => ENV['SENDGRID_PASSWORD'],
+      :user_name => env['SENDGRID_USERNAME'],
+      :password => env['SENDGRID_PASSWORD'],
       :authentication => :plain,
       :enable_starttls_auto => true
     }
