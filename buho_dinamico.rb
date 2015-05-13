@@ -20,7 +20,7 @@ get '/contacto/?' do
   erb :contacto
 end
 
-post '/contacto' do
+post '/contacto/?' do
   options = {
     :to => 'mikimontero@hotmail.com',
     :from => params[:email],
@@ -29,7 +29,7 @@ post '/contacto' do
     :via => :smtp,
     :via_options => {
       :adress => 'smtp.sendgrid.net',
-      :port => 25,
+      :port => '587',
       :domain => 'heroku.com',
       :user_name => ENV['SENDGRID_USERNAME'],
       :password => ENV['SENDGRID_PASSWORD'],
@@ -40,5 +40,5 @@ post '/contacto' do
 
   Pony.mail(options)
 
-  redirect '/contacto/?'
+  redirect '/contacto'
 end
