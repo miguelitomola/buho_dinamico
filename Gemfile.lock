@@ -44,7 +44,7 @@ PLATFORMS
 
 DEPENDENCIES
   pony (~> 1.11)
-  pry
+  pry (~> 0.10.1)
   sinatra
   sinatra-contrib (~> 1.4.2)
   thin (~> 1.6.3)
