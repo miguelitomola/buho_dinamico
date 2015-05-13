@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 require 'pony'
+require 'pry'
 
 
 get '/?' do 
@@ -19,7 +20,7 @@ get '/contacto/?' do
   erb :contacto
 end
 
-post '/contact_form' do
+post '/contacto' do
   options = {
     :to => 'mikimontero@hotmail.com',
     :from => params[:email],
@@ -28,16 +29,16 @@ post '/contact_form' do
     :via => :smtp,
     :via_options => {
       :adress => 'smtp.sendgrid.net',
-      :port => '587',
+      :port => 25,
       :domain => 'heroku.com',
       :user_name => ENV['SENDGRID_USERNAME'],
       :password => ENV['SENDGRID_PASSWORD'],
       :authentication => :plain,
       :enable_starttls_auto => true
     }
-	}
+  }
 
   Pony.mail(options)
 
-  redirect '/contacto'
+  redirect '/contacto/?'
 end
