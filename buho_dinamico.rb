@@ -29,8 +29,8 @@ post '/contacto/?' do
     :via => :smtp,
     :via_options => {
       :adress => 'smtp.sendgrid.net',
-      :port => '587',
-      :domain => 'heroku.com',
+      :port => 587,
+      :domain => 'elbuhodinamico.com',
       :user_name => ENV['SENDGRID_USERNAME'],
       :password => ENV['SENDGRID_PASSWORD'],
       :authentication => :plain,
