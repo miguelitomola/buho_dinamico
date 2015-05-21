@@ -20,7 +20,7 @@ get '/contacto/?' do
   erb :contacto
 end
 
-post '/contacto/?' do
+post '/contacto' do
   options = {
     :to => 'mikimontero@hotmail.com',
     :from => params[:email],
