@@ -22,7 +22,7 @@ end
 
 post '/contacto' do
   options = {
-    :to => 'mikimontero@hotmail.com',
+    :to => '<mikimontero@hotmail.com>',
     :from => params[:email],
     :subject => params[:us_name],
     :body => params[:message],
