@@ -22,7 +22,7 @@ end
 
 post '/contacto' do
   options = {
-    :to => '<mikimontero@hotmail.com>',
+    :to => '<animacionbd@gmail.com>',
     :from => params[:email],
     :subject => params[:us_name]+' ha escrito un mensaje desde elbuhodinamico.com',
     :body => params[:message],
