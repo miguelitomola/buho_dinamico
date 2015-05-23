@@ -22,9 +22,9 @@ end
 
 post '/contacto' do
   options = {
-    :to => '<mikimontero@hotmail.com>',
+    :to => '<animacionbd@gmail.com>',
     :from => '<'+params[:email]+'>',
-    :subject => '<'+params[:us_name]+'>',
+    :subject => '<'+params[:us_name]+' ha escrito un mensaje desde elbuhodinamico.com>',
     :body => '<'+params[:message]+'>',
     :via => :smtp,
     :via_options => {
@@ -39,6 +39,9 @@ post '/contacto' do
   }
 
   Pony.mail(options)
+  
+  @flash_msg = "Tu mensaje ha sido enviado correctamente. En breve nos pondremos en contacto contigo."
 
-  redirect '/contacto'
+  erb :contacto
+
 end

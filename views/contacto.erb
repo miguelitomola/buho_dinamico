@@ -1,5 +1,10 @@
 <% @page_name = "Contacta con nosotros" %>
 
+<% if @flash_msg && @flash_msg.size > 0 %>
+	<p class="email_sent">
+		<%= @email_sent %>
+	</p> 
+<% end %>
 <ul class="contact_us">
 	<li class="phones_li">
 		<p>Por <u>teléfono</u> y <u>whatsapp</u> en los siguientes números: </p>
@@ -13,7 +18,7 @@
 		<p class="email"><strong>animacionbd@gmail.com</strong></p>
 	</li>
 	<li class="form_li">
-	  <p>Rellenando el siguiente <u>formulario</u> (EN CONSTRUCCIÓN):</p>
+	  <p>Rellenando el siguiente <u>formulario</u></p>
 		<form action="/contacto" method="POST" class="contact_form">
 	    <p class="name">
 		    <label for="us_name">Tu nombre</label><br>
