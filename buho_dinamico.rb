@@ -21,27 +21,26 @@ get '/contacto/?' do
 end
 
 post '/contacto' do
-  options = {
-    :to => '<animacionbd@gmail.com>',
-    :from => '<'+params[:email]+'>',
-    :subject => '<'+params[:us_name]+' ha escrito un mensaje desde elbuhodinamico.com>',
-    :body => '<'+params[:message]+'>',
-    :via => :smtp,
-    :via_options => {
-      :address => 'smtp.sendgrid.net',
-      :port => '587',
-      :authentication => :plain,
-      :user_name => ENV['SENDGRID_USERNAME'],
-      :password => ENV['SENDGRID_PASSWORD'],
-      :domain => 'heroku.com',
-      :enable_starttls_auto => true
-    }
-  }
+  # options = {
+  #   :to => '<animacionbd@gmail.com>',
+  #   :from => '<'+params[:email]+'>',
+  #   :subject => '<'+params[:us_name]+' ha escrito un mensaje desde elbuhodinamico.com>',
+  #   :body => '<'+params[:message]+'>',
+  #   :via => :smtp,
+  #   :via_options => {
+  #     :address => 'smtp.sendgrid.net',
+  #     :port => '587',
+  #     :authentication => :plain,
+  #     :user_name => ENV['SENDGRID_USERNAME'],
+  #     :password => ENV['SENDGRID_PASSWORD'],
+  #     :domain => 'heroku.com',
+  #     :enable_starttls_auto => true
+  #   }
+  # }
 
-  Pony.mail(options)
+  # Pony.mail(options)
   
   @flash_msg = "Tu mensaje ha sido enviado correctamente. En breve nos pondremos en contacto contigo."
-
   erb :contacto
 
 end

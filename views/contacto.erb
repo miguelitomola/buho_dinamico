@@ -1,8 +1,8 @@
 <% @page_name = "Contacta con nosotros" %>
 
-<% if @flash_msg && @flash_msg.size > 0 %>
+<% if @flash_msg %>
 	<p class="email_sent">
-		<%= @email_sent %>
+		<%= @flash_msg %>
 	</p> 
 <% end %>
 <ul class="contact_us">
