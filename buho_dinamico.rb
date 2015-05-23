@@ -23,9 +23,9 @@ end
 post '/contacto' do
   options = {
     :to => '<mikimontero@hotmail.com>',
-    :from => params[:email],
-    :subject => params[:us_name],
-    :body => params[:message],
+    :from => '<'+params[:email]+'>',
+    :subject => '<'+params[:us_name]+'>',
+    :body => '<'+params[:message]+'>',
     :via => :smtp,
     :via_options => {
       :address => 'smtp.sendgrid.net',
