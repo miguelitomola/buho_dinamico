@@ -181,6 +181,11 @@ header {
     .page_body .page_content .text_qs img {
       display: block;
       margin: 0 auto; }
+    .page_body .page_content .email_sent {
+      background-color: #ffd800;
+      display: inline-block;
+      padding: 10px;
+      margin-bottom: 10px; }
     .page_body .page_content .contact_us {
       line-height: 35px; }
       .page_body .page_content .contact_us li {

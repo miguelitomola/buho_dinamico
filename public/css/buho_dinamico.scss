@@ -256,6 +256,12 @@ header{
     }
 
 	  /*contacto*/
+	  .email_sent{
+	  	background-color: $yellow;
+	  	display: inline-block;
+      padding: 10px;
+      margin-bottom: 10px;
+	  }
 	  .contact_us{
 	  	line-height: 35px;
 	  	.phones_li{
