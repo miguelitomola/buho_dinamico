@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 ruby '2.3.0', :group => :development
+ruby '2.1', :group => :production
 
 gem 'sinatra'
 gem 'sinatra-contrib', '~> 1.4.2'
